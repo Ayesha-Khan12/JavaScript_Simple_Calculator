@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(bg.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    border: 4px solid black;
+    box-shadow: 12px 10px 12px rgba(0, 0, 0, 0.8);
+    border-radius: 20px;
+}
+.box h1{
+    border-bottom: 2px solid black;
+    font-size: 3rem;
+}
+.label{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 80px;
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+.label input{
+    width: 150px;
+    height: 40px;
+    background-color: rgb(53, 52, 52);
+    border-radius: 10px;
+    border: 2px solid black;
+    color: white;
+    font-size: 1.6rem;
+    
+}
+.top{
+    display: flex;
+}
+.btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: 2px solid gold;
+    width: 300px;
+    height: 100px;
+}
+.btn button{
+    cursor: pointer;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    width: 100px;
+    height: 26px;
+}
+.btn button:hover{
+    font-size: 2rem;
+}
+.box button{
+    cursor: pointer;
+    background-color: rgb(53, 52, 52);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+#result {
+    border: 2px solid black;
+    width: 90px;
+    height: 50px;
+    font-size: 2rem;
+    color: black;
+    border-radius: 10px;
+}
+
+@media (max-width:425px){
+    body{
+        overflow-y: hidden;
+    }
+    .box{
+        width: 400px;
+    }
+}
+@media (max-width:375px){
+    .box{
+        width: 300px;
+    }
+    .box h1{
+        font-size: 1.9rem;
+    }
+    .label{
+        width: 150px;
+        height: 70px;
+        font-size: 1.2rem;
+    }
+    .label input{
+        font-size: 1.2rem;
+        width: 100px;
+        height: 40px;
+    }
+    .btn{
+    width: 250px;
+    }
+}
